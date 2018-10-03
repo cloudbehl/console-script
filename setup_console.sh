@@ -36,4 +36,4 @@ oc adm policy add-cluster-role-to-user cluster-admin admin
 oc login -u admin
 login
 source ./contrib/oc-environment.sh
-./bin/bridge
+nohup ./bin/bridge > /dev/null 2>&1 &
